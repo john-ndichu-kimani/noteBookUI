@@ -1,0 +1,61 @@
+.container{
+  padding: 20px;
+
+}
+.notebook-form {
+  margin-top: 20px;
+  width: 250px;
+
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #ccc;
+}
+
+input[type="text"],
+textarea {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #313131;
+  color: #ccc;
+  border-radius: 5px;
+}
+input:focus,textarea:focus{
+  outline: none;
+}
+textarea {
+  resize: vertical;
+}
+
+.create-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-button:hover {
+  background-color: #0056b3;
+}
+.successMsg{
+  background-color: rgba(136, 250, 191, 0.578);
+  color: #ccc;
+  padding: 10px;
+  border-radius: 10px;
+}
+.errorMsg
+{
+  color:red;
+}
