@@ -27,11 +27,9 @@ export class CreateNoteFormComponent {
 
   notes: noteBook[] = [];
 
-  newNote: noteBook = { id: '001', title: 'note one', content: 'welcome to view my notes 1' };
 
-  addNoteBook() {
-    this.notes.push(this.newNote);
-  }
+
+
 
   // Method to delete a note
   deleteNote(id: string) {
@@ -40,6 +38,10 @@ export class CreateNoteFormComponent {
 
   onSubmit(){
 this.success = true
+
+setTimeout(()=>{
+this.success=false
+},2000)
 
   }
 }

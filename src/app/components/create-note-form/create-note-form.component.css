@@ -1,10 +1,13 @@
 .container{
-  padding: 20px;
-
+  display: flex;
+  justify-content: center;
 }
-.notebook-form {
-  margin-top: 20px;
-  width: 250px;
+.note-form {
+  padding: 20px;
+  min-height: 60vh;
+  width: 350px;
+  border: solid #313131 1px;
+  border-radius: 10px;
 
 }
 
@@ -14,7 +17,6 @@
 
 label {
   display: block;
-  font-weight: bold;
   color: #ccc;
 }
 
@@ -50,12 +52,13 @@ textarea {
   background-color: #0056b3;
 }
 .successMsg{
-  background-color: rgba(136, 250, 191, 0.578);
-  color: #ccc;
+  text-align: center;
+  background-color: rgba(136, 250, 191, 0.921);
   padding: 10px;
-  border-radius: 10px;
+  margin: 20px 0px;
 }
-.errorMsg
+.error
 {
-  color:red;
+  color:rgb(245, 117, 117);
+  font-size: small;
 }
