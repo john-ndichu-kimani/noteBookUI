@@ -1,5 +1,8 @@
 # NoteBookUI
 
+<img width="840" alt="notesUI" src="https://github.com/john-ndichu-kimani/noteBookUI/assets/114753959/3f636a43-9bd3-46ca-8370-2b1db11ccd6f">
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
 
 ## Development server
