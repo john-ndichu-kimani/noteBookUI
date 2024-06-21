@@ -1,6 +1,11 @@
-# NoteBookUI
+# Notes
+<img width="921" alt="Allnotes" src="https://github.com/john-ndichu-kimani/noteBookUI/assets/114753959/a82298df-d889-4d5b-8c5c-70dad020730a">
 
-<img width="840" alt="notesUI" src="https://github.com/john-ndichu-kimani/noteBookUI/assets/114753959/3f636a43-9bd3-46ca-8370-2b1db11ccd6f">
+#Add New Note
+<img width="902" alt="createNote" src="https://github.com/john-ndichu-kimani/noteBookUI/assets/114753959/a1f3c921-04bc-45e3-ad55-41170bfef28c">
+
+#Form Validation
+<img width="828" alt="formvalidate" src="https://github.com/john-ndichu-kimani/noteBookUI/assets/114753959/6f30ccea-13e4-4f66-9056-aadcb793c8c6">
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
