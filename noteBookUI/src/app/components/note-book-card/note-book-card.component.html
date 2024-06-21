@@ -4,15 +4,15 @@
   <div class="searchForm">
     <input type="search" [(ngModel)]= "searchString" id="searchInput" placeholder="Search note here ...">
   </div>
-  <div class="wrapper" *ngIf="noteBooks.length>0">
-    <div class="card" *ngFor="let note of noteBooks | search:searchString" routerLink="single">
+  <div class="wrapper" *ngIf="notes.length>0">
+    <div class="card" *ngFor="let note of notes | search:searchString">
 
       <span style="font-size: small;">{{note.createdAt | date}}</span>
       <div class="card-head">
         <h4 style="color: rgb(114, 248, 214);">{{ note.title }}</h4>
         <div class="actions">
           <i class="fa fa-trash-o" aria-hidden="true" style="color: rgb(253, 105, 105); cursor: pointer;" (click)="deleteNote(note.id)"></i>
-          <i class="fa fa-pencil-square-o" aria-hidden="true" style="color: rgb(242, 194, 107); cursor: pointer;" (click)="editNote(note.id,note)"></i>
+          <i class="fa fa-pencil-square-o" aria-hidden="true" style="color: rgb(242, 194, 107); cursor: pointer;"></i>
         </div>
       </div>
       <div class="text-content">

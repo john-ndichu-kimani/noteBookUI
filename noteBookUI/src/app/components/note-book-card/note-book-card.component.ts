@@ -1,24 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
-import { note } from '../../interfaces/notebook';
 import { CommonModule, DatePipe } from '@angular/common';
 import { SearchPipe } from '../../pipes/search.pipe';
 import { FormsModule } from '@angular/forms';
 import { NotesService } from '../../services/notes.service';
-import { RouterLink } from '@angular/router';
-
+import { note } from '../../interfaces/notebook';
 
 @Component({
   selector: 'app-note-book-card',
   standalone: true,
-  imports: [HeaderComponent, CommonModule, FormsModule, DatePipe, SearchPipe,RouterLink],
+  imports: [HeaderComponent, CommonModule, FormsModule, DatePipe, SearchPipe],
   templateUrl: './note-book-card.component.html',
   styleUrls: ['./note-book-card.component.css']
 })
 export class NoteBookCardComponent implements OnInit {
 
   showConfirmDelete: boolean = false;
-  noteBooks: note[] = [];
+  notes: note[] = [];
   searchString: string = '';
 
   constructor(private notesService: NotesService) {}
@@ -30,9 +28,7 @@ export class NoteBookCardComponent implements OnInit {
   fetchNotes() {
     this.notesService.fetchNotes().subscribe({
       next: (res) => {
-        this.noteBooks = res.noteBooks;
-        console.log(this.noteBooks);
-
+        this.notes = res.notes;
       },
       error: (err) => {
         console.error('Error fetching notes:', err);

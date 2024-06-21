@@ -14,23 +14,21 @@ import { NotesService } from '../../services/notes.service';
   styleUrls: ['./create-note-form.component.css'],
 })
 export class CreateNoteFormComponent {
-  newNote: note = { id: '', title: '', content: '',createdAt:'' };
+  notes: note[] = [];
   success: boolean = false;
   error: boolean = false;
+  newNote: note = { id: '', title: '', content: '',createdAt:'' }; // Adjust the properties based on your note interface
 
   constructor(private notesService: NotesService) {}
 
-  addNote() {
+  createNote() {
     this.notesService.createNote(this.newNote).subscribe({
       next: (response) => {
         if (response.message) {
           this.success = true;
           this.error = false;
-
-          setTimeout(()=>{
-             this.success = false
-          },2000)
-          this.newNote = { id: '', title: '', content: '',createdAt:'' }; // Reset form
+          this.notes.push(this.newNote);
+          this.newNote = { id: '', title: '', content: '',createdAt:'' }; 
         } else if (response.error) {
           this.success = false;
           this.error = true;
@@ -41,9 +39,5 @@ export class CreateNoteFormComponent {
         this.error = true;
       }
     });
-  }
-
-  navigateToCreate(){
-    
   }
 }
