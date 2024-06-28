@@ -6,7 +6,7 @@ header{
   justify-content: space-around;
   color: #fff;
 }
-button{
+.newNote{
   cursor: pointer;
   display: flex;
   gap: 10px;
@@ -17,7 +17,7 @@ button{
  background:linear-gradient(45deg,rgb(10, 179, 136),rgb(148, 134, 244));
  color: #fff;
 }
-button:hover{
+.newNote:hover{
   transition: .2s;
   background:linear-gradient(45deg,rgb(128, 110, 242),rgb(4, 161, 122));
 }

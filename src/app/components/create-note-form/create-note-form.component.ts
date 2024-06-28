@@ -30,7 +30,6 @@ export class CreateNoteFormComponent {
           setTimeout(()=>{
              this.success = false
           },2000)
-          this.newNote = { id: '', title: '', content: '',createdAt:'' }; // Reset form
         } else if (response.error) {
           this.success = false;
           this.error = true;
@@ -44,6 +43,6 @@ export class CreateNoteFormComponent {
   }
 
   navigateToCreate(){
-    
+
   }
 }

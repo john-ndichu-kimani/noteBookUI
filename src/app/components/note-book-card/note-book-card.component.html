@@ -11,7 +11,7 @@
       <div class="card-head">
         <h4 style="color: rgb(114, 248, 214);">{{ note.title }}</h4>
         <div class="actions">
-          <i class="fa fa-trash-o" aria-hidden="true" style="color: rgb(253, 105, 105); cursor: pointer;" (click)="deleteNote(note.id)"></i>
+          <i class="fa fa-trash-o delete" aria-hidden="true" style="color: rgb(253, 105, 105); cursor: pointer;" (click)="deleteNote(note.id)"></i>
           <i class="fa fa-pencil-square-o" aria-hidden="true" style="color: rgb(242, 194, 107); cursor: pointer;" (click)="editNote(note.id,note)"></i>
         </div>
       </div>

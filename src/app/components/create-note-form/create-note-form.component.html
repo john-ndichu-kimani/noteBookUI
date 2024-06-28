@@ -3,7 +3,7 @@
 <div class="container">
   <div class="note-form">
     <div *ngIf="success" class="successMsg">Note created successfully!</div>
-    <form #notebookForm="ngForm" (ngSubmit)="addNote()">
+    <form #notebookForm="ngForm" (ngSubmit)="addNote()"  >
       <div *ngIf="error" class="errorMsg">
         Error occurred while creating the note.
       </div>
@@ -52,7 +52,7 @@
         type="submit"
         class="create-button"
         [disabled]="notebookForm.invalid"
-        routerLink="/"
+
       >
         Create
       </button>

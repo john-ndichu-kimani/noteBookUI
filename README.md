@@ -1,4 +1,4 @@
-# Notes
+# Notesphere App
 <img width="921" alt="Allnotes" src="https://github.com/john-ndichu-kimani/noteBookUI/assets/114753959/a82298df-d889-4d5b-8c5c-70dad020730a">
 
 #Add New Note

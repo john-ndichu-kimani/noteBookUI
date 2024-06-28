@@ -31,7 +31,7 @@ export class NoteBookCardComponent implements OnInit {
     this.notesService.fetchNotes().subscribe({
       next: (res) => {
         this.noteBooks = res.noteBooks;
-        console.log(this.noteBooks);
+
 
       },
       error: (err) => {
